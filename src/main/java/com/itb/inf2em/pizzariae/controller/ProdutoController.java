@@ -1,6 +1,5 @@
 package com.itb.inf2em.pizzariae.controller;
 
-
 import com.itb.inf2em.pizzariae.model.entity.Produto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,8 +27,6 @@ public class ProdutoController {
         p2.setNome("Pizza Muçarela");
         p2.setDescricao("Calabreza com muito queijo");
         p2.setValorVenda(69.99);
-
-
 
         produtos.add(p1);
         produtos.add(p2);

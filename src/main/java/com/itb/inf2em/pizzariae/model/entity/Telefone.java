@@ -1,9 +1,18 @@
 package com.itb.inf2em.pizzariae.model.entity;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Telefone")
 public class Telefone {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(length = 3, nullable = false)
     private String ddd;
+    @Column(length = 10, nullable = false)
     private String numero;
     private boolean codStatus;
 
